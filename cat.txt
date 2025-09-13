@@ -1,0 +1,131 @@
+Microsoft Windows [Version 10.0.19045.6332]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git init
+Initialized empty Git repository in C:/Users/TOSHIBA/Desktop/MERN-wpu/back-end-acara/.git/
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        node_modules/
+        package-lock.json
+        package.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>code .
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git add .
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   package-lock.json
+        new file:   package.json
+
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git log
+fatal: your current branch 'main' does not have any commits yet
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git commit -m "membuat project"
+[main (root-commit) 1d14a23] membuat project
+ 3 files changed, 45 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git remote add origin https://github.com/devzabana69/back-end-acara.git
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git branch -M main
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 858 bytes | 214.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/devzabana69/back-end-acara.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git add .
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   package-lock.json
+        modified:   package.json
+        new file:   src/controllers/dummy.controller.ts
+        new file:   src/index.ts
+        new file:   src/routes/api.ts
+
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push
+Everything up-to-date
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push origin main
+Everything up-to-date
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git remote add origin https://github.com/devzabana69/back-end-acara.git
+error: remote origin already exists.
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git commit -m "membuat router dummy"
+[main 45bfbc1] membuat router dummy
+ 5 files changed, 1619 insertions(+), 1 deletion(-)
+ create mode 100644 src/controllers/dummy.controller.ts
+ create mode 100644 src/index.ts
+ create mode 100644 src/routes/api.ts
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 16.60 KiB | 1.38 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/devzabana69/back-end-acara.git
+   1d14a23..45bfbc1  main -> main
+
+C:\Users\TOSHIBA\Desktop\MERN-wpu\back-end-acara>
+
+
+
